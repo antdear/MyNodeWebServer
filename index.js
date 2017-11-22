@@ -3,7 +3,7 @@ var http = require('http');
 const PORT = process.env.PORT || 1337;
 
 function handleRequest(request, response){
-        response.end('This is the proof of existence of my first Node.js based Web Server.\n' +
+        response.end('This is the proof of existence of my first Node.js based Web Server.\nDeploying on Azure\n' +
             'The requested path on this server was: "' + request.url + '"');
 }
 
