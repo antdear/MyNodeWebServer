@@ -1,6 +1,6 @@
 {
     "name": "antonius-test-node-server",
-    "description": "Antonius Hello World Node.js test for Azure App Service",
+    "description": "Antonius hello World Node.js test for Azure App Service",
     "version": "0.0.1",
     "private": true,
     "license": "MIT",
