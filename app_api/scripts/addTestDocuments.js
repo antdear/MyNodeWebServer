@@ -12,7 +12,7 @@
 db.dropDatabase();
 
 // Creating the 'football' collection and adding some documents
-db.football.save(
+db.WorldCupWinners.save(
     [
         {year:'1990', team:'Germany'},
         {year:'1994', team:'Brazil'},
@@ -25,7 +25,7 @@ db.football.save(
 );
 
 // Creating the 'goldenball' collection and adding some documents
-db.goldenball.save(
+db.GoldenBallWinners.save(
     [
         {year:'1990', player:'Salvatore Schillaci', team: 'Italy'},
         {year:'1994', player:'Romário', team: 'Brazil'},
@@ -37,3 +37,5 @@ db.goldenball.save(
     ]
 );
 
+// Load command to be executed at mongo shell
+// load("C:/antonius_mean_localdev/app_api/scripts/addTestDocuments.js")
