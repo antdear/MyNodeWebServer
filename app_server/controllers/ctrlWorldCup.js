@@ -3,7 +3,7 @@ const apiURL = require('./apiURLs');
 
 const winnerlist = function(req, res){
 
-    const path = '/api/goldenball';
+    const path = '/api/worldcup';
     const requestOptions = {
         url : apiURL.server + path,
         method : 'GET',
@@ -32,7 +32,7 @@ const winnerlist = function(req, res){
         }
     );
 };
-
 module.exports = {
     winnerlist
 };
+
