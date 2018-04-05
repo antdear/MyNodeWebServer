@@ -8,7 +8,12 @@ const ctrlGoldenBall = require('../controllers/ctrlGoldenBall'); // ... for the 
 
 // Defining the routes and associating the routes to their corresponding controllers
 router.get('/', ctrlMain.index);  // Home page
-router.get('/worldcup', ctrlWorldCup.winnerlist);  // List of World Cup winners (countries)
-router.get('/goldenball', ctrlGoldenBall.winnerlist);  // List of Golden ball winners (players)
+router.get('/worldcup', ctrlWorldCup.winnerList);  // List of World Cup winners (countries)
+router.get('/goldenball', ctrlGoldenBall.winnerList);  // List of Golden ball winners (players)
+
+router
+    .route('/worldcup/add')
+    .get(ctrlWorldCup.showForm)   // Display the form
+    .post(ctrlWorldCup.addData);  // Get form data and make the API call
 
 module.exports = router;

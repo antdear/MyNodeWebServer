@@ -1,7 +1,7 @@
 const request = require('request');
 const apiURL = require('./apiURLs');
 
-const winnerlist = function(req, res){
+const winnerList = function(req, res){
 
     const path = '/api/goldenball';
     const requestOptions = {
@@ -27,12 +27,12 @@ const winnerlist = function(req, res){
                 res.render('error', {message: 'No documents in collection'});
             }
             else {
-                res.render('worldcup', {winners: body});
+                res.render('goldenball', {winners: body});
             }
         }
     );
 };
 
 module.exports = {
-    winnerlist
+    winnerList
 };
